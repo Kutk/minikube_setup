@@ -27,7 +27,7 @@ When you want to continue your cluster, use the below command to continue.
 ```minikube start --driver=docker --force```
 
 ### Enter Grafana website
-visit **http://127.0.0.1:3000**
+visit **http://127.0.0.1:3000** in your vm browser
 
 Account: **admin**
 
