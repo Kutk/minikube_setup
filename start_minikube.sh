@@ -29,7 +29,7 @@ kubectl create ns monitoring
 helm install prom prometheus-community/kube-prometheus-stack -n monitoring --values values.yaml
 
 #Wait 240s for preparing pods
-sleep(240)
+sleep 240
 
 #Forward service
 kubectl port-forward service/prom-kube-prometheus-stack-prometheus -n monitoring 9090:9090&
@@ -50,7 +50,7 @@ helm upgrade --install promtail grafana/promtail -f promtail-values.yaml -n moni
 helm upgrade --install loki grafana/loki-distributed -n monitoring
 
 #Wait 240s for preparing pods
-sleep(240)
+sleep 240
 
 kubectl -n monitoring port-forward daemonset/promtail 3101 &
 
