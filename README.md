@@ -25,3 +25,10 @@ This command will stop the minikube cluster and save current status of your work
 When you want to continue your cluster, use the below command to continue.
 
 ```minikube start --driver=docker --force```
+
+### Enter Grafana website
+visit **http://127.0.0.1:3000**
+
+Account: **admin**
+
+Passwd: **prom-operator**
